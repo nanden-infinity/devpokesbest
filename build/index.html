@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/output.css">
   <title>PokemonDevelop</title>
 </head>
 
-<body>
+<body class="font-pokemons">
   <div class="container--body bg-sky-50/.2 min-h-screen w-screen">
     <header class="relative bg-white/.5  py-6 pb-4 shadow-xl">
-      <hr class="border-b-2  shadow-2xl border-orange-500  w-full px-12 absolute bottom-0">
+      <hr class="border-b-2  shadow-2xl border-orange-500/.5  w-full px-12 absolute bottom-0">
       <div class="header--container flex space-x-4 items-center mx-auto px-4">
         <div class="logo flex text-2xl">Dev <span class="text-amber-500 font-bold">Poks</span></div>
-        <nav class="flex  items-center  w-full gap-3">
+        <nav class="nav--menu flex items-center  w-full gap-3">
           <ul class="list--menu md:flex md:justify-end  hidden space-x-2 *:duration-150  ml-auto">
             <a href="#" class="md:px-2 px-4 p-2 inline-block hover:text-orange-600 font-semibold">Inicio</a>
             <a href="#" class="md:px-2 px-4 p-2 inline-block hover:text-orange-600 font-semibold">Pokemons</a>
@@ -35,10 +39,10 @@
     <section class="search--container p-4 py-6 flex">
       <div class="box-search lg:max-w-7xl mx-auto w-full flex items-center  space-x-2 md:relative self-end">
         <input type="text" placeholder="Type something"
-          class="border-[1.4px] duration-150 rounded-md focus-within:outline-orange-600 focus-within:border-transparent border-orange-400 p-4 pl-5 w-full bg-white/10 placeholder:text-slate-400"
+          class="border-[1.4px] duration-150 rounded-md focus-within:outline-orange-600 focus-within:border-transparent border-orange-400 p-2 pl-5 w-full bg-white/10 placeholder:text-slate-400"
           id="search" name="search">
         <button
-          class="bg-orange-500 md:absolute   flex items-center space-x-1 justify-center md:h-[52px] md:right-[4px]  p-4 text-white rounded-md font-semibold">Search<svg
+          class="bg-orange-500 md:absolute   flex items-center space-x-1 justify-center md:h-[52px] md:right-[4px]  p-2 px-4 text-white rounded-md font-semibold">Search<svg
             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="size-6 md:size-8 translate-y-[1px]">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -73,17 +77,30 @@
 
     <section class="card--section">
       <div class="container mx-auto px-4 py-6">
-        <div class="wrapper--cars">
-          <figure>
+        <div class="wrapper--cars mx-auto px-2">
+          <figure class="relative space-y-2 shadow-2xl p-6 rounded-md inset-0 border border-slate-400/.3">
             <div class="box--image"></div>
-            <h3>Person name of Pokemon</h3>
+            <h3 class="text-xl font-pokemons font-semibold text-orange-900">Person name of Pokemon</h3>
             <p>Description Pokemons</p>
-            <button class="more--info">More Info</button>
+            <button
+              class="more--info px-4 p-2 bg-orange-500 hover:bg-orange-600/95 transition duration-75 text-white rounded-md">More
+              Info</button>
+            <div
+              class="info flex justify-center items-center absolute top-0 right-2 cursor-pointer  rounded-full text-orange-500">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+              </svg>
+
+            </div>
           </figure>
         </div>
       </div>
     </section>
   </div>
+
+  <script type="module" src="/js/script.js"></script>
 </body>
 
 </html>

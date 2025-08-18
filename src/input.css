@@ -38,20 +38,20 @@
   }
 }
 
-.hamburger--menu:hover {
+.hamburger--menu.open--menu {
   transform: rotate(90deg);
   transition: 0.5s;
 }
-.hamburger--menu:hover .span--bottom {
+.hamburger--menu.open--menur .span--bottom {
   transition: 0.5s;
-  transform: translateY(1px) translateX(0px) rotate(-45deg);
+  transform: translateY(4px) translateX(-8px) rotate(-45deg);
 }
-.hamburger--menu:hover .span--middle {
+.hamburger--menu.open--menu .span--middle {
   visibility: hidden;
   transition: 0.1s;
   transform: rotate(-45deg) translateX(-4000%);
 }
-.hamburger--menu:hover .span--top {
+.hamburger--menu.open--menu .span--top {
   transition: 0.5s;
-  transform: translateY(1px) translateX(0px) rotate(45deg);
+  transform: translateY(1px) translateX(8px) rotate(45deg);
 }
