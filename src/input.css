@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind utilities;
+.hamburger--menu {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  gap: 2px;
+  height: 28px;
+  align-self: center;
+  width: 28px;
+  transform: rotate(0);
+  padding: 5px;
+  & .span--ham-menu {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-95%, -50%);
+    height: 3px;
+    width: 100%;
+    background: rgba(39, 46, 39, 0.753);
+    border-radius: 1px;
+    &:nth-child(1) {
+      transform: translateY(-10px);
+    }
+    &:nth-child(2) {
+      transform: translateY(-3px);
+    }
+    &:nth-child(3) {
+      transform: translateY(4px);
+    }
+  }
+}
+
+.hamburger--menu:hover {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+.hamburger--menu:hover .span--bottom {
+  transition: 0.5s;
+  transform: translateY(1px) translateX(0px) rotate(-45deg);
+}
+.hamburger--menu:hover .span--middle {
+  visibility: hidden;
+  transition: 0.1s;
+  transform: rotate(-45deg) translateX(-4000%);
+}
+.hamburger--menu:hover .span--top {
+  transition: 0.5s;
+  transform: translateY(1px) translateX(0px) rotate(45deg);
+}
