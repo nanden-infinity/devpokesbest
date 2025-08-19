@@ -38,20 +38,20 @@
   }
 }
 
-.hamburger--menu.open--menu {
+.hamburger--menu {
   transform: rotate(90deg);
   transition: 0.5s;
 }
-.hamburger--menu.open--menur .span--bottom {
+.hamburger--menu .span--bottom {
   transition: 0.5s;
-  transform: translateY(4px) translateX(-8px) rotate(-45deg);
+  transform: translateY(1px) translateX(0px) rotate(-45deg);
 }
-.hamburger--menu.open--menu .span--middle {
+.hamburger--menu .span--middle {
   visibility: hidden;
   transition: 0.1s;
   transform: rotate(-45deg) translateX(-4000%);
 }
-.hamburger--menu.open--menu .span--top {
+.hamburger--menu .span--top {
   transition: 0.5s;
-  transform: translateY(1px) translateX(8px) rotate(45deg);
+  transform: translateY(1px) translateX(-4px) rotate(45deg);
 }
