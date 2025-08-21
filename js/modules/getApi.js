@@ -9,9 +9,9 @@ export default async function getApi(dados) {
     } = itemsPokemons;
     const containerApp = document.createElement("div");
     containerApp.innerHTML = `
-                    <figure class="relative  bg-slate-400  hover:translate-y-4 duration-150  shadow-sm p-4 rounded-md inset-0 border border-slate-400/.3">
+                    <figure class="relative shadow-xl gap-4 cursor-pointer  bg-slate-400  hover:translate-y-4 duration-150  p-4 rounded-md inset-0 border border-slate-400/5">
 
-            <div class="box--image border  border-orange-500 w-10 h-10 flex items-center justify-start">  <img src="${imagens}" alt="${name}" class="w-full"> </div>
+            <div class="box--image  w-10 h-10 flex items-center justify-start">  <img src="${imagens}" alt="${name}" class="w-full"> </div>
             <h3 class="text-2xl uppercase font-pokemons font-semibold text-orange-900">${name}</h3>
             <p>Description Pokemons</p>
             <button

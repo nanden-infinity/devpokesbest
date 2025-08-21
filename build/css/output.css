@@ -866,7 +866,8 @@ video {
   height: 28px;
   align-self: center;
   width: 28px;
-  transform: rotate(0);
+  transform: rotate(0deg);
+  transition: 0.4s;
   padding: 5px;
   & .span--ham-menu {
     position: absolute;
@@ -887,22 +888,25 @@ video {
       transform: translateY(4px);
     }
   }
+}
+
+.hamburger--menu.open--menu {
   transform: rotate(90deg);
-  transition: 0.5s
-}
-
-.hamburger--menu .span--bottom {
   transition: 0.5s;
-  transform: translateY(1px) translateX(0px) rotate(-45deg);
 }
 
-.hamburger--menu .span--middle {
+.hamburger--menu.open--menu .span--bottom {
+  transition: 0.5s;
+  transform: translateY(1px) translateX(-4px) rotate(-45deg);
+}
+
+.hamburger--menu.open--menu .span--middle {
   visibility: hidden;
   transition: 0.1s;
   transform: rotate(-45deg) translateX(-4000%);
 }
 
-.hamburger--menu .span--top {
+.hamburger--menu.open--menu .span--top {
   transition: 0.5s;
   transform: translateY(1px) translateX(-4px) rotate(45deg);
 }
