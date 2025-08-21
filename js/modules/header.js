@@ -1,3 +1,4 @@
+
 export default class Header {
   constructor(container, nav) {
     this.container = document.querySelector(container);
@@ -14,7 +15,6 @@ export default class Header {
 
     function openMenu(e) {
       this.classList.toggle("open--menu");
-
       menu.classList.remove("hidden");
       menu.classList.add(
         "absolute",
